@@ -294,17 +294,8 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
             $(document).ready(function(){
-                console.log(window.location.href);
-                // if(window.location.href.includes("comp-profile")){
-                //     document.getElementById("sidebar").style.visibility = "hidden";
-                // }
                 let curr = null
-                let prev = null
-
                 
-
-                
-
                 var sidebarAppear = function () {
                     const sidebarCollapsible = document.body.querySelector('#sidebar');
                     const navigator1 = document.body.querySelector('#navigator1')
@@ -321,7 +312,6 @@
                         sidebarCollapsible.classList.remove('appear')
                     } else {
                         sidebarCollapsible.classList.add('appear')
-                        console.log(window.scrollY)
 
                         if(window.scrollY < 1643 && window.scrollY > 639) {
                             if(curr) {
